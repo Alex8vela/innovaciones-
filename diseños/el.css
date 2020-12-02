@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'open sans';
+    background-color: #767fff;
+}
+
+.contenedor{
+    
+    margin: 500;
+    overflow: hidden;
+    padding: 150px 150px;
+    width: 90%;
+    
+}
+.titulo{
+    color: #121c2b;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/* header*/
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #50C9C3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #421e46, #8863ec); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+background-size: cover;
+background-attachment: fixed;
+position: relative;
+}
+nav{
+    text-align: right;
+    padding: 80px 80px 1 1;
+}
+nav > a{
+     color:rgb(27, 35, 36);
+     font-weight: 300;
+     text-decoration: none;
+     margin-right: 10px;
+}
+nav > a :hover{
+    text-decoration:underline;
+   
+}
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 50px;
+    color: rgb(0, 0, 0);
+}
+
+.textos-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: rgb(21, 20, 102);
+}
+
+.wave{
+    position: absolute;
+    bottom:  0;
+    width: 100%;
+    background-color:322e57 ;
+}
+
+
+
+
+/* About us */
+.contenedor-sobre-javas-cript{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-about-us{
+    width: 48%;
+}
+.imagen-about-us1{
+    width: 20%;
+    height: 30%;
+}
+
+
+.contenedor-sobre-javas-cript .contenido-textos{
+    width: 48% ;
+}
+
+.contenido-textos h3 {
+    margin-bottom: 15px;
+
+}
+.contenido-textos h3 span{
+    background: rgb(37, 4, 112);
+    color: rgb(255, 245, 245);
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    box-shadow: lightslategrey;
+    margin-right: 5px;
+
+}
+
+.contenido-textos p{
+    padding: 0px 0px 30px 15px;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+
+/* galeria-Dis*/
+
+.Diseño {
+    background: rgb(247, 247, 237);
+}
+
+
+.galeria-Dis{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-Dis{
+    width: 24%;
+    margin-bottom: 10px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgb(0, 0, 0 .5);
+}
+.p{
+    background-color: #ccc;
+}
+.imagen-Dis > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block ;
+}
+.hover-galeria-Dis{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    /*transform: scale(0);*/
+    background: hsla(272, 13%, 53%, 0.7);
+      transition: trasform .5s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+}
+.hover-imagen-Dis{
+    width: 50px;
+}
+
+.galeria-Dis p{
+    color: rgb(255, 250, 250);
+
+}
+/*programadores contenedor*/
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: rgb(238, 178, 67);
+    display: flex;
+    width: 46%;
+    height: 300px;
+    align-items: center;
+    justify-content:space-evenly;
+    border-radius:10px ;
+    box-shadow: 0 0 16px rgb(0, 0, 0 0.6);
+}
+.cards .card img {
+    width: 100px;
+    height: 115px;
+    object-fit: cover;
+    border: 3px solid#fff;
+    border-radius: 50%;
+    display: block;
+}
+.cards .card > .contenido-texto-card p {
+    font-weight: 300;
+    padding-top: 5px;
+}
+/* Our team */
+
+.about-services{
+    background: #e49452;
+  
+   
+}
+.servicio-cont{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.servicio-ind{
+  
+    text-align: center;
+}
+.servicio-ind img {
+    width: 10%;
+
+}
+.servicio-ind h3{
+    margin: 10px 10;
+}
+.servicio-ind p{
+     font-weight: 300;
+     text-align: justify;
+}
+/* footer */
+
+footer{
+    background: #414141;
+    padding: 60px 0 30 px 0 ;
+    margin: auto;
+    overflow: hidden;
+
+}
+.contenedor-footer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.contect-foot{
+    text-align: center;
+}
+.contect-foot{
+    color: #fff;
+    border-bottom: 3px solid #0f6907;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.contect-foot p{
+     color: rgb(255, 253, 253);
+}
+.titulo-final.h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0 ;
+    color:#587e7e;
+
+}
